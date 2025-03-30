@@ -47,13 +47,12 @@ def toggle_clicking():
         auto_clicker_thread.start()
 
 
-# 输入错误提示
 def on_press(key):
     global con_start
     if con_start:
-        if key == Key.f4:  # 如果按下 F6 键
+        if key == Key.f4:  
             toggle_clicking()
-        elif key == Key.f6: # 按下F4恢复
+        elif key == Key.f6: 
             choice1['state'] = NORMAL
             choice2['state'] = NORMAL
             choice3['state'] = NORMAL
@@ -85,7 +84,7 @@ def write():
     with open('click_1.txt', 'w') as file:
         file.write(interval_entry.get())
 
-
+# 输入错误提示
 def display_message():
     label.config(text="请先输入间隔,且不为0",font=("微软雅黑", 8), fg='#b13b12')
     label.place(x=80, y=40)
