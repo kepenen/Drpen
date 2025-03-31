@@ -7,8 +7,9 @@
 pip install pynput tkinter
 ```
 
-### 小问题
+## 小问题
 在ai的帮助下，我随便写了这个连点器，本人用于mc挖空置域还有速通galgame等，具同学反映，**吃鸡不可以使用**
-
+界面：  
+![图片...](./image.png)
 
 
